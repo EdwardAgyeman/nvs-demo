@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  /* background: url("./city.jpeg"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cardWrapper {
+  background: rgba(199, 209, 219);
+  border-radius: 6px;
+  max-height: 50px;
+  overflow: hidden;
+  padding: 1rem;
+  width: 200px;
+  transition: max-height 500ms ease-in-out;
+  position: relative;
+}
+.cardWrapper:hover {
+  box-shadow: 0 0 8px #d3d3d3;
+  cursor: pointer;
+  max-height: 350px;
+}
+.card1 {
+  position: absolute;
+  top: 440px;
+  left: 300px;
+}
+.card2 {
+  position: absolute;
+  top: 250px;
+  left: 750px;
+}
+.card3 {
+  position: absolute;
+  top: 370px;
+  right: 200px;
+}
+.cardTitle {
+  margin: 0;
+}
+.revealDetails {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+button:hover {
+  box-shadow: 0 0 8px #a19d9d;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
