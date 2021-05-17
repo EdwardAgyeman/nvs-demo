@@ -44,6 +44,7 @@
 
   100% {
     transform: scale(1.5);
+    filter: blur(5px);
     /* transform-origin: 640px 500px; */
   }
 }
@@ -60,6 +61,7 @@
 
   100% {
     transform: scale(1.5);
+    filter: blur(5px);
     /* transform-origin: 250px 750px; */
   }
 }
@@ -76,12 +78,14 @@
 
   100% {
     transform: scale(1.5);
+    filter: blur(5px);
     /* transform-origin: 370px 594px; */
   }
 }
 @keyframes zoomIn4 {
   0% {
     transform: scale(1.1);
+    filter: blur(5px);
     /* transform-origin: 92.5px 146px; */
   }
   50% {
@@ -91,6 +95,7 @@
 
   100% {
     transform: scale(1.5);
+    filter: blur(5px);
     /* transform-origin: 370px 594px; */
   }
 }
@@ -106,6 +111,7 @@
 
   100% {
     transform: scale(1.5);
+    filter: blur(5px);
     /* transform-origin: 370px 594px; */
   }
 }
@@ -121,6 +127,7 @@
 
   100% {
     transform: scale(1.5);
+    filter: blur(5px);
     /* transform-origin: 370px 594px; */
   }
 }
