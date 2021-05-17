@@ -4,14 +4,31 @@ import { useHistory } from "react-router-dom";
 import appRoutes from "../../constants/appRoutes";
 import queryParams from "../../constants/queryParams";
 import classes from "./LandingPage.module.css";
-import eventData from "../../constants/mockData";
+// import eventData from "../../constants/mockData";
 
 // Context Menu Import
 import { ContextMenu, MenuItem, ContextMenuTrigger } from "react-contextmenu";
-import '../../styles/react-contextmenu.css'
-
+import "../../styles/react-contextmenu.css";
 
 const LandingPage = () => {
+  const [eventData, seteventData] = useState([
+    {
+      eventTitle: "Event 1",
+      eventDescription:
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+    },
+    {
+      eventTitle: "Event 2",
+      eventDescription:
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+    },
+    {
+      eventTitle: "Event 3",
+      eventDescription:
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+    },
+  ]);
+
   const [shouldAnimate, setShouldAnimate] = useState(false);
   const [index, setIndex] = useState(undefined);
 
@@ -25,21 +42,33 @@ const LandingPage = () => {
         pathname: appRoutes.events,
         search: `${queryParams.eventId}=${eventId}`,
       });
-    }, 3000);
+    }, 2000);
   };
 
   const handleClick = (event, data) => {
-    console.log(`clicked`, { event, data })
-  }
+    console.log(`clicked`, { event, data });
+    console.log("CLICK");
+    // Push a new EVENT CARD
+    // eventData.push({
+    //   eventTitle: "Event 4",
+    //   eventDescription:
+    //     "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+    // });
+    seteventData([...eventData, {
+      eventTitle: "Event 4",
+      eventDescription:
+        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
+    }]);
+  };
 
-  const ID = 'ID'
+  const ID = "ID";
 
   const attributes = {
-    className: 'custom-root',
-    disabledClassName: 'custom-disabled',
-    dividerClassName: 'custom-divider',
-    selectedClassName: 'custom-selected'
-  }
+    className: "custom-root",
+    disabledClassName: "custom-disabled",
+    dividerClassName: "custom-divider",
+    selectedClassName: "custom-selected",
+  };
 
   return (
     <>
@@ -71,7 +100,7 @@ const LandingPage = () => {
         >
           Add Event
         </MenuItem>
-        <MenuItem
+        {/* <MenuItem
           data={{ action: "Edit Event" }}
           onClick={handleClick}
           attributes={attributes}
@@ -85,7 +114,7 @@ const LandingPage = () => {
           attributes={attributes}
         >
           Delete Event
-        </MenuItem>
+        </MenuItem> */}
       </ContextMenu>
     </>
   );

@@ -14,13 +14,13 @@
 
 /* Zoom In Effect */
 .card1zoom {
-  animation: zoomIn1 3s;
+  animation: zoomIn1 2s;
 }
 .card2zoom {
-  animation: zoomIn2 3s;
+  animation: zoomIn2 2s;
 }
 .card3zoom {
-  animation: zoomIn3 3s;
+  animation: zoomIn3 2s;
 }
 
 @keyframes zoomIn1 {
