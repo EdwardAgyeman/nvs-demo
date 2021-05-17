@@ -22,6 +22,15 @@
 .card3zoom {
   animation: zoomIn3 2s;
 }
+.card4zoom {
+  animation: zoomIn1 2s;
+}
+.card5zoom {
+  animation: zoomIn2 2s;
+}
+.card6zoom {
+  animation: zoomIn3 2s;
+}
 
 @keyframes zoomIn1 {
   0% {
@@ -56,6 +65,51 @@
 }
 
 @keyframes zoomIn3 {
+  0% {
+    transform: scale(1.1);
+    /* transform-origin: 92.5px 146px; */
+  }
+  50% {
+    transform: scale(1.3);
+    /* transform-origin: 185px 292px; */
+  }
+
+  100% {
+    transform: scale(1.5);
+    /* transform-origin: 370px 594px; */
+  }
+}
+@keyframes zoomIn4 {
+  0% {
+    transform: scale(1.1);
+    /* transform-origin: 92.5px 146px; */
+  }
+  50% {
+    transform: scale(1.3);
+    /* transform-origin: 185px 292px; */
+  }
+
+  100% {
+    transform: scale(1.5);
+    /* transform-origin: 370px 594px; */
+  }
+}
+@keyframes zoomIn5 {
+  0% {
+    transform: scale(1.1);
+    /* transform-origin: 92.5px 146px; */
+  }
+  50% {
+    transform: scale(1.3);
+    /* transform-origin: 185px 292px; */
+  }
+
+  100% {
+    transform: scale(1.5);
+    /* transform-origin: 370px 594px; */
+  }
+}
+@keyframes zoomIn6 {
   0% {
     transform: scale(1.1);
     /* transform-origin: 92.5px 146px; */

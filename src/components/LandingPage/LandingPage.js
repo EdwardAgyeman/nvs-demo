@@ -49,16 +49,14 @@ const LandingPage = () => {
     console.log(`clicked`, { event, data });
     console.log("CLICK");
     // Push a new EVENT CARD
-    // eventData.push({
-    //   eventTitle: "Event 4",
-    //   eventDescription:
-    //     "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-    // });
-    seteventData([...eventData, {
-      eventTitle: "Event 4",
-      eventDescription:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut"
-    }]);
+    seteventData([
+      ...eventData,
+      {
+        eventTitle: "Event X",
+        eventDescription:
+          "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
+      },
+    ]);
   };
 
   const ID = "ID";
